@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="./robotyper.js"></script>
+  <link rel="stylesheet" type="text/css" href="./robotyper.css">
+  <title>TypeSpeed: Test Your Typing Skills</title>
+  <meta name="description" content="A typing speed calculator using pure JavaScript">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Typing Speed Test</h1>
+      <p>Improve your typing skills with dynamic tests!</p>
+    </div>
+
+    <div class="content">
+      <div class="test-display">
+        <div id="display" class="boxes"></div>
+        <textarea id="type-speed-input" class="boxes" rows="8" placeholder="Start typing here..."></textarea>
+      </div>
+
+      <div class="metrics">
+        <table>
+          <tr>
+            <td>
+              Words
+              <div id="word-count">0</div>
+            </td>
+            <td>
+              Errors
+              <div id="error-count">0</div>
+            </td>
+            <td>
+              Mistyped Words
+              <div id="mistyped-words">0</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Accuracy
+              <div id="accuracy">100%</div>
+            </td>
+            <td>
+              Words Per Minute
+              <div id="wpm">0</div>
+            </td>
+            <td>
+              Time to Completion
+              <div id="typing-time">(not done)</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="controls">
+        <button id="newTest" class="reset-button">Next Test</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
